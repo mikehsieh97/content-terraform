@@ -6,7 +6,7 @@ terraform {
   backend "s3" {
     bucket = "la-terraform-course-state"
     key = "terraform/terraform.tfstate"
-    region = "us-west-2"
+    region = "${var.aws_region}"
   }
 }
 
